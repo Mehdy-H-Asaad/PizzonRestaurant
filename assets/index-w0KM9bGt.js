@@ -150,7 +150,7 @@ Error generating stack: `+o.message+`
 		text-transform: uppercase;
 		font-size: 35px;
 		letter-spacing: 3px;
-		font-family: fantasy;
+		font-family: "Anton", sans-serif;
 	}
 	h6 {
 		position: relative;
@@ -407,7 +407,7 @@ to {
   > * {
     pointer-events: auto;
   }
-`,Cl=16,Mf=({reverseOrder:e,position:t="top-center",toastOptions:n,gutter:r,children:i,containerStyle:o,containerClassName:l})=>{let{toasts:a,handlers:s}=Kw(n);return _.createElement("div",{style:{position:"fixed",zIndex:9999,top:Cl,left:Cl,right:Cl,bottom:Cl,pointerEvents:"none",...o},className:l,onMouseEnter:s.startPause,onMouseLeave:s.endPause},a.map(u=>{let c=u.position||t,p=s.calculateOffset(u,{reverseOrder:e,gutter:r,defaultPosition:t}),g=y3(c,p);return _.createElement(v3,{id:u.id,key:u.id,onHeightUpdate:s.updateHeight,className:u.visible?x3:"",style:g},u.type==="custom"?Oa(u.message,u):i?i(u):_.createElement(g3,{toast:u,position:c}))}))},Ff=vt;function Vf(){const{register:e,handleSubmit:t,formState:{errors:n}}=A1(),r=()=>Ff.success("Submitted!"),i={userName:"Name is not valid",email:"Email is not valid"};return d.jsxs(w3,{children:[d.jsx(St,{children:d.jsxs(nn,{children:[d.jsxs(We,{className:"col-lg-6",children:[d.jsxs(S3,{children:[d.jsx("h6",{children:"fresh from pizzon"}),d.jsx("h3",{className:"dark-color",children:"book online"})]}),d.jsxs(A3,{children:[d.jsx("p",{children:"Elevate your dining experience with ease! Reserve a table at our restaurant, where exquisite cuisine meets inviting ambiance. Enjoy impeccable service and create memorable moments with your loved ones, ensuring a delightful and unforgettable mealtime."}),d.jsxs(E3,{children:[d.jsx(cw,{className:"phone-icon"}),d.jsx("span",{children:"+1 123456789"})]})]})]}),d.jsx(We,{className:"col-lg-6",children:d.jsxs(k3,{onSubmit:t(r),children:[d.jsx("h3",{children:"book online"}),n.userName&&d.jsx("p",{className:"error-msg",children:n.userName.type==="required"?"This field in required":"Name is not vaild"}),d.jsx("input",{type:"text",placeholder:"Name",...e("userName",{required:!0,pattern:{value:/^[a-zA-Z]+$/,message:"Please enter a valid name"}})}),n.email&&d.jsx("p",{className:"error-msg",children:n.email.type==="required"?"This field is required":i.email}),d.jsx("input",{type:"text",placeholder:"Email",...e("email",{required:!0,pattern:{value:/^\S+@\S+\.\S+$/,message:"Please enter a valid email address"}})}),n.date&&d.jsx("p",{className:"error-msg",children:"This field is required"}),d.jsx("input",{type:"date",...e("date",{required:!0})}),d.jsx(J2,{children:"Book Now"})]})})]})}),d.jsx(Mf,{position:"top-center"})]})}const w3=b.div`
+`,Cl=16,Mf=({reverseOrder:e,position:t="top-center",toastOptions:n,gutter:r,children:i,containerStyle:o,containerClassName:l})=>{let{toasts:a,handlers:s}=Kw(n);return _.createElement("div",{style:{position:"fixed",zIndex:9999,top:Cl,left:Cl,right:Cl,bottom:Cl,pointerEvents:"none",...o},className:l,onMouseEnter:s.startPause,onMouseLeave:s.endPause},a.map(u=>{let c=u.position||t,p=s.calculateOffset(u,{reverseOrder:e,gutter:r,defaultPosition:t}),g=y3(c,p);return _.createElement(v3,{id:u.id,key:u.id,onHeightUpdate:s.updateHeight,className:u.visible?x3:"",style:g},u.type==="custom"?Oa(u.message,u):i?i(u):_.createElement(g3,{toast:u,position:c}))}))},Ff=vt;function Vf(){const{register:e,handleSubmit:t,formState:{errors:n}}=A1(),r=()=>Ff.success("Submitted!"),i={userName:"Name is not valid",email:"Email is not valid"};return d.jsxs(w3,{children:[d.jsx(St,{children:d.jsxs(nn,{children:[d.jsxs(We,{className:"col-lg-6",children:[d.jsxs(S3,{children:[d.jsx("h6",{children:"fresh from pizzon"}),d.jsx("h3",{className:"dark-color",children:"book online"})]}),d.jsxs(A3,{children:[d.jsx("p",{children:"Elevate your dining experience with ease! Reserve a table at our restaurant, where exquisite cuisine meets inviting ambiance. Enjoy impeccable service and create memorable moments with your loved ones, ensuring a delightful and unforgettable mealtime."}),d.jsxs(E3,{children:[d.jsx(cw,{className:"phone-icon"}),d.jsx("span",{children:"+1 123456789"})]})]})]}),d.jsx(We,{className:"col-lg-6",children:d.jsxs(k3,{onSubmit:t(r),children:[d.jsx("h3",{children:"book online"}),n.userName&&d.jsx("p",{className:"error-msg",children:n.userName.type==="required"?"This field in required":"Name is not vaild"}),d.jsx("input",{type:"text",placeholder:"Name",...e("userName",{required:!0,pattern:{value:/^[a-zA-Z]+$/,message:"Please enter a valid name"}})}),n.email&&d.jsx("p",{className:"error-msg",children:n.email.type==="required"?"This field is required":i.email}),d.jsx("input",{type:"text",placeholder:"Email",...e("email",{required:!0,pattern:{value:/^\S+@\S+\.\S+$/,message:"Please enter a valid email address"}})}),n.date&&d.jsx("p",{className:"error-msg",children:"This field is required"}),d.jsx("input",{type:"date",placeholder:"Date",...e("date",{required:!0})}),d.jsx(J2,{children:"Book Now"})]})})]})}),d.jsx(Mf,{position:"top-center"})]})}const w3=b.div`
 	position: relative;
 	padding: 0 0 60px;
 `,A3=b.div`
@@ -882,9 +882,9 @@ to {
 	h1,
 	span {
 		color: #fff;
-		font-size: 130px;
+		font-size: 132px;
 		letter-spacing: 7px;
-		font-family: fantasy;
+		font-family: "Anton", sans-serif;
 	}
 	span {
 		color: ${ie};
